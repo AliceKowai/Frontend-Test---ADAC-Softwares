@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-background {
+    background-color: #181818;
+  }
+  .text-primary {
+    color: #4452FE;
+  }
+}
+
+body {
+  @apply bg-[#181818] text-white; /* Use o código Hex direto aqui */
+}
