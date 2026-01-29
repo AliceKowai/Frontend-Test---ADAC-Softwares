@@ -3,6 +3,7 @@ import { Contents } from './components/sections/Contents';
 import { Features } from './components/sections/Features';
 import { Gallery } from './components/sections/Galery';
 import { Hero } from './components/sections/Hero';
+import { Partners } from './components/sections/Partners';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Features/>
       <Contents/>
       <Gallery/>
+      <Partners/>
     </main>
   )
 }
