@@ -1,5 +1,6 @@
 import { Header } from './components/layout/Header';
 import { Contents } from './components/sections/Contents';
+import { CTA } from './components/sections/CTA';
 import { Features } from './components/sections/Features';
 import { Gallery } from './components/sections/Galery';
 import { Hero } from './components/sections/Hero';
@@ -16,6 +17,7 @@ function App() {
       <Gallery/>
       <Partners/>
       <Testimonials/>
+      <CTA/>
     </main>
   )
 }
