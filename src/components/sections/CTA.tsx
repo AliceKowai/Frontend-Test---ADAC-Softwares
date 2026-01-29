@@ -1,10 +1,8 @@
 import React from "react";
 import { Button } from "../ui/Button";
 
-// IMPORTANTE: Importe as duas imagens aqui
-// Substitua pelos nomes reais dos seus arquivos na pasta assets
 import ctaImageDesktop from "../../assets/mokup.png"; 
-import ctaImageMobile from "../../assets/tumbnail.jpg"; // Exemplo: crie/use a imagem específica mobile
+import ctaImageMobile from "../../assets/tumbnail.jpg"; 
 
 export const CTA = () => {
   return (
@@ -24,23 +22,13 @@ export const CTA = () => {
           </Button>
         </div>
 
-        {/* LADO DIREITO (Área das Imagens) */}
         <div className="w-full h-auto md:w-1/2 md:h-full flex justify-center md:justify-end items-end">
-          
-          {/* === IMAGEM MOBILE ===
-              - block md:hidden: Aparece no mobile, some no desktop.
-              - Sem translate-y: Fica normal, sem corte.
-          */}
+  
           <img
             src={ctaImageMobile}
             alt="App Mobile"
             className="w-[350px] p-2 mt-4 h-auto object-cover object-top block md:hidden"
           />
-
-          {/* === IMAGEM DESKTOP ===
-              - hidden md:block: Some no mobile, aparece no desktop.
-              - md:translate-y-[22%]: Aplica o efeito de corte apenas aqui.
-          */}
           <img
             src={ctaImageDesktop}
             alt="App Desktop"
