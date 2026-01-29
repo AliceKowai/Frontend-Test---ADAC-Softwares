@@ -60,7 +60,7 @@ export const Contents = () => {
             >
               Try For Free
             </Button>
-            <div className="mt-auto rounded-[14px] shadow-[0px_4px_31px_0px_rgba(0,0,0,0.15)] md:w-[379px] h-auto md:h-[276px] object-contain rounded-[14px] overflow-hidden">
+            <div className="mt-auto shadow-[0px_4px_31px_0px_rgba(0,0,0,0.15)] md:w-[379px] h-auto md:h-[276px] object-contain rounded-[14px] overflow-hidden">
               <img
                 src={contentImage2}
                 alt="Design Interface"

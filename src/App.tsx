@@ -1,3 +1,4 @@
+import { Footer } from './components/layout/Footer';
 import { Header } from './components/layout/Header';
 import { Contents } from './components/sections/Contents';
 import { CTA } from './components/sections/CTA';
@@ -18,6 +19,7 @@ function App() {
       <Partners/>
       <Testimonials/>
       <CTA/>
+      <Footer/>
     </main>
   )
 }
