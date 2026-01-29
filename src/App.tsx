@@ -4,6 +4,7 @@ import { Features } from './components/sections/Features';
 import { Gallery } from './components/sections/Galery';
 import { Hero } from './components/sections/Hero';
 import { Partners } from './components/sections/Partners';
+import { Testimonials } from './components/sections/Testimonials';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Contents/>
       <Gallery/>
       <Partners/>
+      <Testimonials/>
     </main>
   )
 }
