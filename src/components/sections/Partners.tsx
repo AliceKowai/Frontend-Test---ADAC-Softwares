@@ -3,12 +3,10 @@ import { Button } from "../ui/Button";
 import { PartnerLogo } from "../ui/PartnerLogo";
 
 export const Partners = () => {
-  // Lista de dados para manter o JSX limpo. 
-  // Cada item contém sua classe de tamanho específica e o SVG.
+
   const partnersList = [
     {
       id: "apple",
-      // Apple: 50x50 (mobile) -> 60x60 (desktop)
       sizeClass: "w-[50px] h-[50px] md:w-[60px] md:h-[60px]",
       svg: (
         <svg viewBox="0 0 60 60" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +28,6 @@ export const Partners = () => {
     },
     {
       id: "apiary",
-      // Apiary: 50x51 (mobile) -> 60x61 (desktop)
       sizeClass: "w-[50px] h-[51px] md:w-[60px] md:h-[61px]",
       svg: (
         <svg viewBox="0 0 60 61" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +64,6 @@ export const Partners = () => {
     },
     {
       id: "android",
-      // Android: 50x59 (mobile) -> 60x71 (desktop)
       sizeClass: "w-[50px] h-[59px] md:w-[60px] md:h-[71px]",
       svg: (
         <svg viewBox="0 0 60 71" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +84,6 @@ export const Partners = () => {
     },
     {
       id: "basecamp",
-      // Basecamp: 60x50 (mobile) -> 72x60 (desktop)
       sizeClass: "w-[60px] h-[50px] md:w-[72px] md:h-[60px]",
       svg: (
         <svg viewBox="0 0 73 60" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +102,6 @@ export const Partners = () => {
     },
     {
       id: "airbnb",
-      // Airbnb: 50x54 (mobile) -> 60x65 (desktop)
       sizeClass: "w-[50px] h-[54px] md:w-[60px] md:h-[65px]",
       svg: (
         <svg viewBox="0 0 60 65" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +118,6 @@ export const Partners = () => {
     },
     {
       id: "ibm",
-      // IBM: 110x44 (mobile) -> 150x60 (desktop)
       sizeClass: "w-[110px] h-[44px] md:w-[150px] md:h-[60px]",
       svg: (
         <svg viewBox="0 0 150 60" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
