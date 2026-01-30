@@ -17,7 +17,6 @@ import deskImg7 from "../../assets/camera.jpg";
 
 export const Gallery = () => {
   return (
-    // 'overflow-hidden' na section previne que qualquer sombra ou elemento vaze e crie rolagem
     <section className="py-20 bg-background text-white overflow-hidden">
       <div className="max-w-[1097px] mx-auto px-4 sm:px-6 flex flex-col items-center">
         
@@ -34,9 +33,6 @@ export const Gallery = () => {
 
         {/* =========================================================
                             LAYOUT MOBILE & TABLET
-            - w-full: Ocupa a largura disponível (evita rolagem em telas pequenas)
-            - max-w-[323px]: Mantém o tamanho original do seu design em telas maiores
-            - mx-auto: Centraliza a imagem no grid
            ========================================================= */}
         <div className="xl:hidden grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl">
            <img 

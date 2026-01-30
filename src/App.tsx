@@ -19,9 +19,6 @@ function App() {
       <Testimonials/>
       <CTA/>
       <Footer/>
-      {/* 
-      
-      */}
     </main>
   )
 }
