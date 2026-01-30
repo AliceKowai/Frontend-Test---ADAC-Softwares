@@ -1,4 +1,3 @@
-import React from "react";
 
 export const Footer = () => {
   // Dados das colunas de links
