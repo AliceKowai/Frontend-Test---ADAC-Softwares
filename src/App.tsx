@@ -10,16 +10,18 @@ import { Testimonials } from './components/sections/Testimonials';
 
 function App() {
   return (
-    <main className="bg-background min-h-screen text-white font-sans selection:bg-primary selection:text-white">
+    <main className="overflow-x-hidden">
       <Header />
       <Hero />
       <Features/>
       <Contents/>
-      <Gallery/>
       <Partners/>
       <Testimonials/>
       <CTA/>
       <Footer/>
+      {/* 
+      
+      */}
     </main>
   )
 }

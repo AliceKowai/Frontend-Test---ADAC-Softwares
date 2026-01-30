@@ -17,7 +17,8 @@ import deskImg7 from "../../assets/camera.jpg";
 
 export const Gallery = () => {
   return (
-    <section className="py-20 bg-background text-white">
+    // 'overflow-hidden' na section previne que qualquer sombra ou elemento vaze e crie rolagem
+    <section className="py-20 bg-background text-white overflow-hidden">
       <div className="max-w-[1097px] mx-auto px-4 sm:px-6 flex flex-col items-center">
         
         {/* CABEÇALHO */}
@@ -32,42 +33,57 @@ export const Gallery = () => {
         </div>
 
         {/* =========================================================
-                            LAYOUT MOBILE
+                            LAYOUT MOBILE & TABLET
+            - w-full: Ocupa a largura disponível (evita rolagem em telas pequenas)
+            - max-w-[323px]: Mantém o tamanho original do seu design em telas maiores
+            - mx-auto: Centraliza a imagem no grid
            ========================================================= */}
-        <div className="md:hidden flex flex-col gap-6 w-full max-w-sm ">
-           {/* Arredondamento e Sombra conforme o estilo geral */}
-           <img src={mobileImg1} alt="Gallery 1" className="w-[323px] h-[285px] mx-auto rounded-[12px] shadow-lg object-cover" />
-           <img src={mobileImg2} alt="Gallery 2" className="w-[323px] h-[285px] mx-auto rounded-[12px] shadow-lg object-cover" />
-           <img src={mobileImg3} alt="Gallery 3" className="w-[323px] h-[285px] mx-auto rounded-[12px] shadow-lg object-cover" />
-           <img src={mobileImg4} alt="Gallery 4" className="w-[323px] h-[285px] mx-auto rounded-[12px] shadow-lg object-cover" />
+        <div className="xl:hidden grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl">
+           <img 
+             src={mobileImg1} 
+             alt="Gallery 1" 
+             className="w-full max-w-[323px] h-[285px] mx-auto rounded-[12px] shadow-lg object-cover" 
+           />
+           <img 
+             src={mobileImg2} 
+             alt="Gallery 2" 
+             className="w-full max-w-[323px] h-[285px] mx-auto rounded-[12px] shadow-lg object-cover" 
+           />
+           <img 
+             src={mobileImg3} 
+             alt="Gallery 3" 
+             className="w-full max-w-[323px] h-[285px] mx-auto rounded-[12px] shadow-lg object-cover" 
+           />
+           <img 
+             src={mobileImg4} 
+             alt="Gallery 4" 
+             className="w-full max-w-[323px] h-[285px] mx-auto rounded-[12px] shadow-lg object-cover" 
+           />
         </div>
 
         {/* =========================================================
-                            LAYOUT DESKTOP
+                            LAYOUT DESKTOP (XL)
            ========================================================= */}
-        <div className="hidden md:flex flex-col gap-[30px] w-full">
+        <div className="hidden xl:flex flex-col gap-[30px] w-full items-center">
             
-            {/* LINHA 1 (4 Imagens) */}
-          <div className="hidden md:flex flex-col gap-[30px] w-full items-center">
+            {/* LINHA 1 */}
+            <div className="flex flex-row justify-center gap-[33px]">
+                <img src={deskImg1} alt="Gallery 1" className="w-[225px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
+                <img src={deskImg2} alt="Gallery 2" className="w-[225px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
+                <img src={deskImg3} alt="Gallery 3" className="w-[225px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
+                <img src={deskImg4} alt="Gallery 4" className="w-[225px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
 
-    <div className="flex flex-row justify-center gap-[33px]">
-        <img src={deskImg1} alt="Gallery 1" className="w-[225px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
-        <img src={deskImg2} alt="Gallery 2" className="w-[225px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
-        <img src={deskImg3} alt="Gallery 3" className="w-[225px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
-        <img src={deskImg4} alt="Gallery 4" className="w-[225px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
-    </div>
-
-    <div className="flex flex-row justify-center gap-[33px]">
-        <img src={deskImg5} alt="Gallery 5" className="w-[395px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
-        <img src={deskImg6} alt="Gallery 6" className="w-[225px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
-        <img src={deskImg7} alt="Gallery 7" className="w-[401px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
-    </div>
-
-</div>
+            {/* LINHA 2 */}
+            <div className="flex flex-row justify-center gap-[33px]">
+                <img src={deskImg5} alt="Gallery 5" className="w-[395px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
+                <img src={deskImg6} alt="Gallery 6" className="w-[225px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
+                <img src={deskImg7} alt="Gallery 7" className="w-[401px] h-[285px] rounded-[12px] object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
 
         </div>
 
-        {/* BOTÃO "See more" */}
+        {/* BOTÃO */}
         <Button 
             variant="outline" 
             className="mt-12 h-[52px] px-[36px] border-white text-white hover:bg-white hover:text-black transition-colors"

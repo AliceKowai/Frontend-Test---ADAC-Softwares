@@ -18,9 +18,9 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#181818] text-white py-[80px] md:py-[107px]">
+    <footer className="bg-[#181818] text-white py-[80px] md:py-[107px] ">
     
-      <div className="md:w-[1219px] w-80 mx-auto px-6 flex flex-col md:flex-row justify-between gap-[75px] md:gap-8">
+      <div className=" md:w-full max-w-[1219px] w-80 mx-auto px-6 flex flex-col md:flex-row justify-between gap-[75px] md:gap-8">
         
         <div className="flex flex-col md:flex-row gap-[75px]">
           {linksColumns.map((col, index) => (
