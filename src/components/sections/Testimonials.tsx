@@ -1,4 +1,3 @@
-import React from 'react';
 import { TestimonialCard } from '../ui/TestimonialCard'; // Caminho atualizado para UI
 
 // Imports das imagens (ajuste se necessário)

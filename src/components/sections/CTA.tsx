@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../ui/Button";
 
 import ctaImageDesktop from "../../assets/mokup.png"; 

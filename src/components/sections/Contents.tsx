@@ -1,9 +1,7 @@
-import React from "react";
 import { ContentCard } from "../ui/ContentCard";
 import { LaptopMockup } from "../ui/LaptopMockup";
 import contentImage1 from "../../assets/Bank Account History.jpg"; 
 import contentImage2 from "../../assets/boards notifications.jpg";
-import { FadeIn } from "../ui/FadeIn";
 
 export const Contents = () => {
   return (

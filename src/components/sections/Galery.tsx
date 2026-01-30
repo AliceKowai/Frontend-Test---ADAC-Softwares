@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from '../ui/Button';
 
 import mobileImg1 from "../../assets/drone.jpg";      

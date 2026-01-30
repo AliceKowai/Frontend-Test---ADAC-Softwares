@@ -1,4 +1,3 @@
-import React from "react";
 import chatbot from "../../assets/chatbot.jpg";
 import lineChart from "../../assets/line Chart.jpg";
 
