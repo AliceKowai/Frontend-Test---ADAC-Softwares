@@ -8,7 +8,7 @@ O projeto é uma reprodução pixel-perfect da "Startup Landing Page Dark". O fo
 
 ### 🔗 Links
 - **Design Original (Figma):** ADAC Softwares
-- **Deploy:** *[Insira o link do seu deploy aqui, ex: Vercel/Netlify]*
+- **Deploy:** *[https://frontend-test-adac-softwares-eight.vercel.app/]*
 
 ## 🛠️ Tecnologias Utilizadas
 
